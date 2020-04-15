@@ -9,7 +9,6 @@ Palette = {
 };
 dock = script.Parent;
 tweenService = game:GetService("TweenService")
-
 do -- rend le dock opaque au survol de la souris
 
     onMouseEnter = function()
@@ -62,8 +61,8 @@ do -- quand tu met ta souris devent un piton
                         })
                     tween:Play()
                 end
-                v.MouseEnter:Connect(OnMouseEnter)
-                v.MouseLeave:Connect(OnMouseLeave)
+                v.MouseEnter:Connect(onMouseEnter)
+                v.MouseLeave:Connect(onMouseLeave)
             end
 
         end
