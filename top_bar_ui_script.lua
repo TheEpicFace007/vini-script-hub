@@ -40,8 +40,8 @@ do -- quand tu met ta souris devent un piton
 
                 onMouseEnter = function()
                     local tweenInfo = TweenInfo.new(
-                                          0.5, Enum.EasingStyle.Cubic,
-                                          Enum.EasingDirection.InOut, 0, false,
+                                          0.5, Enum.EasingStyle.Quad,
+                                          Enum.EasingDirection.In, 0, false,
                                           0 -- 1.144
                     )
                     local tween = tweenService:Create(
@@ -53,8 +53,8 @@ do -- quand tu met ta souris devent un piton
 
                 onMouseLeave = function()
                     local tweenInfo = TweenInfo.new(
-                                          0.89, Enum.EasingStyle.Cubic,
-                                          Enum.EasingDirection.InOut, 0, false,
+                                          0.89, Enum.EasingStyle.Quad,
+                                          Enum.EasingDirection.Out, 0, false,
                                           0)
                     local tween = tweenService:Create(
                                       v, tweenInfo, {
