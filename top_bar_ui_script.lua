@@ -62,6 +62,8 @@ do -- quand tu met ta souris devent un piton
                         })
                     tween:Play()
                 end
+                v.MouseEnter:Connect(OnMouseEnter)
+                v.MouseLeave:Connect(OnMouseLeave)
             end
 
         end
