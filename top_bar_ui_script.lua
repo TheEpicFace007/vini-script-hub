@@ -35,6 +35,7 @@ end
 do -- quand tu met ta souris devent un piton
     for _, v in next, dock:GetChildren() do
         if v.ClassName == "ImageButton" then
+            
             do -- le piton ou ya limage(pas le label)
 
                 onMouseEnter = function()
@@ -45,7 +46,7 @@ do -- quand tu met ta souris devent un piton
                     )
                     local tween = tweenService:Create(
                                       dock, tweenInfo, {
-                            Position = UDim2.fromOffset(UDim2.X.Offset, 1.144)
+                            Position = UDim2.fromOffset(UDim2.X,0, 1.144)
                         })
                     tween:Play()
                 end
@@ -57,10 +58,11 @@ do -- quand tu met ta souris devent un piton
                                           0)
                     local tween = tweenService:Create(
                                       dock, tweenInfo, {
-                            Position = UDim2.fromOffset(UDim2.X.Offset, 0.571)
+                            Position = UDim2.new(UDim2.X, 0,0.571)
                         })
                     tween:Play()
                 end
+                ---
                 v.MouseEnter:Connect(onMouseEnter)
                 v.MouseLeave:Connect(onMouseLeave)
             end
