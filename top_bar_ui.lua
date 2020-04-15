@@ -52,7 +52,6 @@ do -- quand tu met ta souris devent un piton
                 end
 
                 onMouseLeave = function()
-                    print("on mouse leave")
                     local tweenInfo = TweenInfo.new(
                                           0.89, Enum.EasingStyle.Cubic,
                                           Enum.EasingDirection.InOut, 0, false,
